@@ -1,7 +1,48 @@
-# Environments
+# Virtual environments
 .venv
-env/
 venv/
-ENV/
-env.bak/
-venv.bak/
+env/
+
+# Python cache/artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Secrets & environment
+.env
+.env.*
+!.env.example
+
+# Version control
+.git
+.gitignore
+.python-version
+
+# Docker itself
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Docs (optional — not needed at runtime)
+README.md
+
+# Logs
+*.log
+
+# Test files (optional, skip if you run tests inside the container)
+test.py
+tests/
